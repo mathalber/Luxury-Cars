@@ -1,26 +1,29 @@
-const fs = require('fs');
-
-const novoConteudo = `
 # Projeto Web Básico
 
-Este é um projeto front-end com HTML, CSS e JavaScript.
+Este repositório contém um site simples em HTML, CSS e JavaScript.
 
-## 📁 Estrutura
+## Visual
 
-- \`index.html\`
-- \`style.css\`
-- \`script.js\`
+Home:
 
-## 🔧 Como usar
+![Home screenshot](img/readme/Home.png)
 
-Abra o arquivo \`index.html\` no navegador.
+Fale Conosco:
 
-## 🧑‍💻 Autor
+![Project image](img/readme/image.png)
+
+## Estrutura
+
+- `index.html`
+- `contact.html`
+- `styles.css`
+- `script.js`
+- `img/` (imagens do projeto)
+
+## Como visualizar
+
+Abra `index.html` no navegador ou use um servidor local (ex.: `npx serve`).
+
+## Autor
 
 [Matheus Alberto](https://github.com/mathalber)
-`;
-
-fs.writeFile('README.md', novoConteudo, (err) => {
-  if (err) throw err;
-  console.log('README.md atualizado com sucesso!');
-});
